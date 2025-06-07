@@ -1,19 +1,16 @@
-# arithmetic_operations.py
-
-def perform_operation(num1: float, num2: float, operation: str) -> float:
+def perform_operation(num1: float, num2: float, operation: str):
     """
     Performs basic arithmetic operations on two numbers.
     
     Args:
         num1: First number (float)
         num2: Second number (float)
-        operation: Type of operation (add, subtract, multiply, divide)
+        operation: Type of operation ('add', 'subtract', 'multiply', 'divide')
         
     Returns:
-        Result of the arithmetic operation as float
-        Returns "Error: Division by zero!" for division by zero cases
+        Result of the operation as float, or error message string for division by zero
     """
-    operation = operation.lower()  # Convert to lowercase for case-insensitive comparison
+    operation = operation.lower()  # Make case-insensitive
     
     if operation == 'add':
         return num1 + num2

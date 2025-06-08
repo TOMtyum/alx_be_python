@@ -54,4 +54,4 @@ def main():
         elif choice == '3':
             # View list functionality
             if not shopping_list:
-            
+               
